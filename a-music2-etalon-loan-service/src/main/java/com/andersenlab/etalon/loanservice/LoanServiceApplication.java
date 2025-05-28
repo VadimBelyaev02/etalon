@@ -12,5 +12,6 @@ public class LoanServiceApplication {
     SpringApplication.run(LoanServiceApplication.class, args);
     System.out.println("Loan Service Application started successfully.");
     System.out.println("Ah");
+    System.out.println("Ahf");
   }
 }
