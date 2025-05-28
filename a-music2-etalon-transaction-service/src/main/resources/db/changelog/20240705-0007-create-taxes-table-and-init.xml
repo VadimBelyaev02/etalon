@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0007-create-taxes-table-and-init" author="itaren">
+        <createSequence
+                sequenceName="taxes_sequence"
+                dataType="bigint"
+                startValue="1"/>
+        <createTable tableName="taxes">
+            <column name="payment_product_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="tax_type" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="recipient_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tax_department_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseTableName="taxes"
+                baseColumnNames="payment_product_id"
+                constraintName="fk_payment_types_to_taxes"
+                referencedTableName="payment_types"
+                referencedColumnNames="id"/>
+
+        <loadData tableName="taxes"
+                  file="data/20240705-taxes.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

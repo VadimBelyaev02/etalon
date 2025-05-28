@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000002",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber-accountNumber_ok-withdraw.json"
+      }
+    }
+  ]
+}

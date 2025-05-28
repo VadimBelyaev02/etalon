@@ -1,0 +1,198 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "transfer-user"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000111"
+          },
+          {
+            "accountNumber": "PL48234567840000000000000222"
+          },
+          {
+            "accountNumber": "PL48234567840000000000000333"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "1"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000011"
+          },
+          {
+            "accountNumber": "PL48234567840000000000000012"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "2"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000021"
+          },
+          {
+            "accountNumber": "PL48234567840000000000000022"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "3"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000031"
+          },
+          {
+            "accountNumber": "PL48234567840000000000000032"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "4"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000041"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "5"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000051"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "6"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000000050"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts",
+        "queryParameters": {
+          "userId": {
+            "equalTo": "7"
+          }
+        },
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "accountNumber": "PL48234567840000000000009741"
+          },
+          {
+            "accountNumber": "PL48234567840000000000004152"
+          }
+        ]
+      }
+    }
+  ]
+}

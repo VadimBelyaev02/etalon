@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0001-create-sequence-for-auth-confirmations-table" author="Hanchar">
+        <createSequence
+                sequenceName="auth_confirmations_sequence"
+                dataType="bigint"
+                startValue="1"/>
+    </changeSet>
+
+    <changeSet id="0002-create-auth-confirmations-table" author="itaren">
+        <createTable tableName="auth_confirmations">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="blocked_at" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="invalid_attempts" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="confirmation_method" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="confirmation_code" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="operation" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="target_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

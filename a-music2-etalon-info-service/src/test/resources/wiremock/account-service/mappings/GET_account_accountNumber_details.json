@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL27234567840000000000000172",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_account_accountNumber_PL27234567840000000000000172_ok.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL46234567840000000000000056",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_account_accountNumber_PL46234567840000000000000056_ok.json"
+      }
+    }
+  ]
+}

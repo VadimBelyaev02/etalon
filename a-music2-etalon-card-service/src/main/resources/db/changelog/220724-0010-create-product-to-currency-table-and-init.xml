@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0010-create-product-to-currency-table" author="itaren">
+        <createTable tableName="product_to_currency">
+            <column name="product_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_product_to_currency"/>
+            </column>
+
+            <column name="currency_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_product_to_currency"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0011-insert-product-to-currency-table" author="itaren">
+        <loadData tableName="product_to_currency"
+                  file="data/220724-product_to_currency.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
+

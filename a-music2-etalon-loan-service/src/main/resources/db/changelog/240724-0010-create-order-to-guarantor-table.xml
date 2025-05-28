@@ -1,0 +1,39 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0010-create-sequence-for-order_to_guarantor-table" author="itaren">
+        <createSequence
+                sequenceName="order_to_guarantor_sequence"
+                dataType="bigint"
+                startValue="1"/>
+    </changeSet>
+
+    <changeSet id="0011-create-order-to-guarantor-table" author="itaren">
+        <createTable tableName="order_to_guarantor">
+            <column name="order_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="guarantor_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseColumnNames="order_id"
+                baseTableName="order_to_guarantor"
+                constraintName="fk_order_to_guarantor"
+                referencedColumnNames="id"
+                referencedTableName="orders"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="guarantor_id"
+                baseTableName="order_to_guarantor"
+                constraintName="fk_guarantor_to_order"
+                referencedColumnNames="id"
+                referencedTableName="guarantors"/>
+    </changeSet>
+
+</databaseChangeLog>

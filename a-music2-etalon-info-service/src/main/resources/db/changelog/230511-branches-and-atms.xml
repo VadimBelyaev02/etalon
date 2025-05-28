@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0001-create-sequence-for-ATM-table" author="Yakauleu">
+        <createSequence
+                sequenceName="ATM_sequence"
+                dataType="bigint"
+                startValue="14"/>
+    </changeSet>
+
+    <changeSet id="0002-create-ATM-table" author="Yakauleu">
+        <createTable tableName="atm">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="atm_name" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="city" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0003-create-sequence-for-ATM-operation-mode-table" author="Yakauleu">
+        <createSequence
+                sequenceName="ATM_operation_mode_sequence"
+                dataType="bigint"
+                startValue="91"/>
+    </changeSet>
+
+    <changeSet id="0004-create-ATM-operation-mode-table" author="Yakauleu">
+        <createTable tableName="atm_operation_mode">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="atm_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_ATM_to_ATM_operation_mode" references="ATM(id)"/>
+            </column>
+            <column name="day_of_week" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="opening_time" type="timetz">
+                <constraints nullable="false"/>
+            </column>
+            <column name="closing_time" type="timetz">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0005-create-sequence-for-bank-branches-table" author="Yakauleu">
+        <createSequence
+                sequenceName="bank_branches_sequence"
+                dataType="bigint"
+                startValue="12"/>
+    </changeSet>
+
+    <changeSet id="0006-create-bank-branches-table" author="Yakauleu">
+        <createTable tableName="bank_branches">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="bank_branch_name" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="city" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0007-create-sequence-for-bank-branches-operation-mode-table" author="Yakauleu">
+        <createSequence
+                sequenceName="bank_branches_operation_mode_sequence"
+                dataType="bigint"
+                startValue="61"/>
+    </changeSet>
+
+    <changeSet id="0008-create-bank-branches-operation-mode-table" author="Yakauleu">
+        <createTable tableName="bank_branches_operation_mode">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="bank_branches_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_bank_branches_to_bank_branches_operation_mode"
+                             references="bank_branches(id)"/>
+            </column>
+            <column name="day_of_week" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="opening_time" type="timetz">
+                <constraints nullable="false"/>
+            </column>
+            <column name="closing_time" type="timetz">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0009-create-index-for-ATM-table" author="Yakauleu">
+        <createIndex tableName="ATM"
+                     indexName="ATM_idx_city">
+            <column name="city"/>
+        </createIndex>
+    </changeSet>
+
+
+    <changeSet id="0010-create-index-for-bank-branches-table" author="Yakauleu">
+        <createIndex tableName="bank_branches"
+                     indexName="bank_branches_idx_city">
+            <column name="city"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

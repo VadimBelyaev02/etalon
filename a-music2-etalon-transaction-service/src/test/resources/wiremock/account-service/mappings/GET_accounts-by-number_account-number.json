@@ -1,0 +1,164 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000011",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "998",
+          "iban": "PL48234567840000000000000011",
+          "userId": "1",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000012",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "999",
+          "iban": "PL48234567840000000000000012",
+          "userId": "1",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000021",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "999",
+          "iban": "PL48234567840000000000000021",
+          "userId": "2",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000031",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "999",
+          "iban": "PL48234567840000000000000031",
+          "userId": "3",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000032",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "999",
+          "iban": "PL48234567840000000000000032",
+          "userId": "3",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000041",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "999",
+          "iban": "PL48234567840000000000000041",
+          "userId": "4",
+          "balance": 1000,
+          "isBlocked": true,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000101",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "1000",
+          "iban": "PL48234567840000000000000101",
+          "userId": "4",
+          "balance": 100,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000009741",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "20",
+          "iban": "PL48234567840000000000009741",
+          "userId": "7",
+          "balance": 100,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+id,country_name_en,country_name_pl,phone_code,image_key
+1,Canada,Kanada,1,Canada.svg
+2,United States,Stany Zjednoczone,1,United States.svg
+3,Bahamas,Bahamy,1242,Bahamas.svg
+4,Barbados,Barbados,1246,Barbados.svg
+5,Anguilla,Anguilla,1264,Anguilla.svg
+6,Antigua and Barbuda,Antigua i Barbuda,1268,Antigua and Barbuda.svg
+7,Virgin Islands British,Brytyjskie Wyspy Dziewicze,1284,Bandeira de Ilhas Virgens Britanicas.svg
+8,Virgin Islands U.S.,Wyspy Dziewicze USA,1340,United States Virgin Islands.svg
+9,Bermuda,Bermudy,1441,Bermuda.svg
+10,Grenada,Grenada,1473,Grenada.svg
+11,Turks and Caicos Islands,Wyspy Turks i Caicos,1649,Turks and Caicos Islands.svg
+12,Montserrat,Montserrat,1664,Montserrat.svg
+13,Northern Mariana Islands,Mariany Północne,1670,Northern Mariana Islands.svg
+14,Guam,Guam,1671,Guam.svg
+15,American Samoa,Samoa Amerykańskie,1684,American Samoa.svg
+16,Saint Lucia,Święta Łucja,1758,Saint Lucia.svg
+17,Dominica,Dominika,1767,Dominica.svg
+18,Saint Vincent and the Grenadines,Saint Vincent i Grenadyny,1784,Saint Vincent and the Grenadines.svg
+19,Dominican Republic,Republika Dominikany,1849,Dominican Republic.svg
+20,Trinidad and Tobago,Trynidad i Tobago,1868,Trinidad and Tobago.svg
+21,Saint Kitts and Nevis,Saint Kitts i Nevis,1869,Saint Kitts and Nevis.svg
+22,Jamaica,Jamajka,1876,Jamaica.svg
+23,Puerto Rico,Portoryko,1939,Puerto Rico.svg
+24,Egypt,Egipt,20,Egypt.svg
+25,South Sudan,Sudan Południowy,211,South Sudan.svg
+26,Morocco,Maroko,212,Morocco.svg
+27,Algeria,Algieria,213,Algeria.svg
+28,Tunisia,Tunezja,216,Tunisia.svg
+29,Libyan Arab Jamahiriya,Libijska Arabska Dżamahirija,218,Libya.svg
+30,Gambia,Gambia,220,Gambia.svg
+31,Senegal,Senegal,221,Senegal.svg
+32,Mauritania,Mauretania,222,Mauritania.svg
+33,Mali,Mali,223,Mali.svg
+34,Cote d'Ivoire,Wybrzeże Kości Słoniowej,225,Ivory Coast.svg
+35,Burkina Faso,Burkina Faso,226,Burkina Faso.svg
+36,Niger,Niger,227,Niger.svg
+37,Togo,Togo,228,Togo.svg
+38,Benin,Benin,229,Benin Republic.svg
+39,Mauritius,Mauritius,230,Mauritius.svg
+40,Liberia,Liberia,231,Liberia.svg
+41,Sierra Leone,Sierra Leone,232,Sierra Leone.svg
+42,Ghana,Ghana,233,Ghana.svg
+43,Nigeria,Nigeria,234,Nigeria.svg
+44,Central African Republic,środkowoafrykańska Republika,236,Central African Republic.svg
+45,Cameroon,Kamerun,237,Cameroon.svg
+46,Cape Verde,Republika Zielonego Przylądka,238,Cape Verde.svg
+47,Equatorial Guinea,Gwinea Równikowa,240,Equatorial Guinea.svg
+48,Gabon,Gabon,241,Gabon.svg
+49,Congo,Kongo,242,Republic of the Congo.svg
+50,Democratic Republic of the Congo,Demokratyczna Republika Kongo,243,DR Congo.svg
+51,Angola,Angola,244,Angola.svg
+52,Guinea-Bissau,Gwinea Bissau,245,Guinea-Bissau.svg
+53,British Indian Ocean Territory,Brytyjskie Terytorium Oceanu Indyjskiego,246,British Indian Ocean Territory.svg
+54,Seychelles,Seszele,248,Seychelles.svg
+55,Sudan,Sudan,249,Sudan.svg
+56,Rwanda,Rwanda,250,Rwanda.svg
+57,Ethiopia,Etiopia,251,Ethiopia.svg
+58,Somalia,Somali,252,Somalia.svg
+59,Djibouti,Dżibuti,253,Djibouti.svg
+60,Kenya,Kenia,254,Kenya.svg
+61,Tanzania,Tanzania,255,Tanzania.svg
+62,Uganda,Uganda,256,Uganda.svg
+63,Burundi,Burundi,257,Burundi.svg
+64,Mozambique,Mozambik,258,Mozambique.svg
+65,Zambia,Zambia,260,Zambia.svg
+66,Madagascar,Madagaskar,261,Madagascar.svg
+67,French Southern Territories,Francuskie Terytoria Południowe,262,French Southern and Antarctic Lands.svg
+68,Mayotte,Majotta,262,Mayotte.svg
+69,Zimbabwe,Zimbabwe,263,Zimbabwe.svg
+70,Namibia,Namibia,264,Namibia.svg
+71,Malawi,Malawi,265,Malawi.svg
+72,Lesotho,Lesoto,266,Lesotho.svg
+73,Botswana,Botswana,267,Botswana.svg
+74,Comoros,Komory,269,Comoros.svg
+75,South Africa,Republika Południowej Afryki,27,South Africa.svg
+76,Saint Helena,Święta Helena,290,Saint Helena Ascension and Tristan da Cunha.svg
+77,Eritrea,Erytrea,291,Eritrea.svg
+78,Aruba,Aruba,297,Aruba.svg
+79,Faroe Islands,Wyspy Owcze,298,Faroe Islands.svg
+80,Greenland,Grenlandia,299,Greenland.svg
+81,Greece,Grecja,30,Greece.svg
+82,Netherlands,Niderlandy,31,Netherlands.svg
+83,Belgium,Belgia,32,Belgium.svg
+84,France,Francja,33,France.svg
+85,Spain,Hiszpania,34,Spain.svg
+86,Cayman Islands,Kajman Wyspy,345,Cayman Islands.svg
+87,Gibraltar,Gibraltar,350,Gibraltar.svg
+88,Portugal,Portugalia,351,Portugal.svg
+89,Luxembourg,Luksemburg,352,Luxembourg.svg
+90,Ireland,Irlandia,353,Ireland.svg
+91,Iceland,Islandia,354,Iceland.svg
+92,Albania,Albania,355,Albania.svg
+93,Malta,Malta,356,Malta.svg
+94,Cyprus,Cypr,357,Cyprus.svg
+95,Aland Islands,Wyspy Alandzkie,358,Aland.svg
+96,Finland,Finlandia,358,Finland.svg
+97,Bulgaria,Bułgaria,359,Bulgaria.svg
+98,Hungary,Węgry,36,Hungary.svg
+99,Lithuania,Litwa,370,Lithuania.svg
+100,Latvia,Łotwa,371,Latvia.svg
+101,Estonia,Estonia,372,Estonia.svg
+102,Moldova,Mołdawia,373,Moldova.svg
+103,Armenia,Armenia,374,Armenia.svg
+104,Belarus,Białoruś,375,Belarus.svg
+105,Andorra,Andora,376,Andorra.svg
+106,Monaco,Monako,377,Monaco.svg
+107,San Marino,San Marino,378,San Marino.svg
+108,Vatican City,Watykan,379,Vatican City.svg
+109,Ukraine,Ukraina,380,Ukraine.svg
+110,Serbia,Serbia,381,Serbia.svg
+111,Montenegro,Czarnogóra,382,Montenegro.svg
+112,Kosovo,Kosowo,383,Kosovo.svg
+113,Croatia,Chorwacja,385,Croatia.svg
+114,Slovenia,Słowenia,386,Slovenia.svg
+115,Bosnia and Herzegovina,Bośnia i Hercegowina,387,Bosnia and Herzegovina.svg
+116,North Macedonia,Macedonia Północna,389,Macedonia.svg
+117,Italy,Włochy,39,Italy.svg
+118,Romania,Rumunia,40,Romania.svg
+119,Switzerland,Szwajcaria,41,Switzerland.svg
+120,Czech Republic,Czechy,420,Czech Republic.svg
+121,Slovakia,Słowacja,421,Slovakia.svg
+122,Liechtenstein,Liechtenstein,423,Liechtenstein.svg
+123,Austria,Austria,43,Austria.svg
+124,Guernsey,Guernsey,44,Guernsey.svg
+125,Isle of Man,Wyspa Man,44,Isle of Man.svg
+126,Jersey,Jersey,44,Jersey.svg
+127,United Kingdom,Wielka Brytania,44,Great Britain.svg
+128,Denmark,Dania,45,Denmark.svg
+129,Sweden,Szwecja,46,Sweden.svg
+130,Norway,Norwegia,47,Norway.svg
+131,Poland,Polska,48,Poland.svg
+132,Germany,Niemcy,49,Germany.svg
+133,South Georgia and the South Sandwich Islands,Georgia Południowa i Sandwich Południowy,500,South Georgia and the South Sandwich Islands.svg
+134,Belize,Belize,501,Belize.svg
+135,Guatemala,Gwatemala,502,Guatemala.svg
+136,El Salvador,Salwador,503,El Salvador.svg
+137,Honduras,Honduras,504,Honduras.svg
+138,Nicaragua,Nikaragua,505,Nicaragua.svg
+139,Costa Rica,Kosmos Rica,506,Costa Rica.svg
+140,Panama,Panama,507,Panama.svg
+141,Saint Pierre and Miquelon,Saint-Pierre i Miquelon,508,Saint Pierre and Miquelon.svg
+142,Haiti,Haiti,509,Haiti.svg
+143,Peru,Peru,51,Peru.svg
+144,Mexico,Meksyk,52,Mexico.svg
+145,Cuba,Kuba,53,Cuba.svg
+146,Argentina,Argentyna,54,Argentina.svg
+147,Brazil,Brazylia,55,Brazil.svg
+148,Chile,Chile,56,Chile.svg
+149,Colombia,Kolumbia,57,Colombia.svg
+150,Venezuela,Wenezuela,58,Venezuela.svg
+151,Guadeloupe,Gwadelupa,590,Guadeloupe.svg
+152,Bolivia,Boliwia,591,Bolivia.svg
+153,Guyana,Gujana,592,Guyana.svg
+154,Ecuador,Ekwador,593,Ecuador.svg
+155,French Guiana,Gujana Francuska,594,French Guiana.svg
+156,Paraguay,Paragwaj,595,Paraguay.svg
+157,Martinique,Martynika,596,Martinique.svg
+158,Suriname,Surinam,597,Suriname.svg
+159,Uruguay,Urugwaj,598,Uruguay.svg
+160,Malaysia,Malezja,60,Malaysia.svg
+161,Australia,Australia,61,Australia.svg
+162,Christmas Island,Wyspa Bożego Narodzenia,61,Christmas Island.svg
+163,Cocos (Keeling) Islands,Wyspy Kokosowe (Keelinga),61,Cocos Island.svg
+164,Indonesia,Indonezja,62,Indonesia.svg
+165,Philippines,Filipiny,63,Philippines.svg
+166,New Zealand,Nowa Zelandia,64,New Zealand.svg
+167,Pitcairn,Pitcairn,64,Pitcairn Islands.svg
+168,Singapore,Singapur,65,Singapore.svg
+169,Thailand,Tajlandia,66,Thailand.svg
+170,Timor-Leste,Timor Wschodni,670,East Timor.svg
+171,Antarctica,Antarktyda,672,Antarctica.svg
+172,Norfolk Island,Wyspa Norfolk,672,Norfolk Island.svg
+173,Brunei Darussalam,Brunei Darussalam,673,Brunei.svg
+174,Nauru,Nauru,674,Nauru.svg
+175,Papua New Guinea,Papua-Nowa Gwinea,675,Papua New Guinea.svg
+176,Tonga,Tonga,676,Tonga.svg
+177,Solomon Islands,Wyspy Salomona,677,Solomon Islands.svg
+178,Vanuatu,Vanuatu,678,Vanuatu.svg
+179,Fiji,Fidżi,679,Fiji.svg
+180,Palau,Palau,680,Palau.svg
+181,Wallis and Futuna,Wallis i Futuna,681,Wallis and Futuna.svg
+182,Cook Islands,Wyspy Cooka,682,Cook Islands.svg
+183,Niue,Niue,683,Niue.svg
+184,Samoa,Samoa,685,Samoa.svg
+185,Kiribati,Kiribati,686,Kiribati.svg
+186,New Caledonia,Nowa Kaledonia,687,New Caledonia.svg
+187,Tuvalu,Tuvalu,688,Tuvalu.svg
+188,French Polynesia,Francuski Polinezja,689,French Polynesia.svg
+189,Tokelau,Tokelau,690,Tokelau.svg
+190,Micronesia,Mikronezja,691,Micronesia.svg
+191,Marshall Islands,Wyspy Marshalla,692,Marshall Islands.svg
+192,Kazakhstan,Kazachstan,7,Kazakhstan.svg
+193,Russia,Rosja,7,Russia.svg
+194,Japan,Japonia,81,Japan.svg
+195,Republic of South Korea,Republika Korei Południowej,82,South Korea.svg
+196,Vietnam,Wietnam,84,Vietnam.svg
+197,Democratic Peoples Republic of Korea,Koreańska Republika Ludowo-Demokratyczna,850,North Korea.svg
+198,Hong Kong,Hongkong,852,Hong Kong.svg
+199,Macao,Makao,853,Macau.svg
+200,Cambodia,Kambodża,855,Cambodia.svg
+201,Laos,Laos,856,Laos.svg
+202,China,Chiny,86,China.svg
+203,Bangladesh,Bangladesz,880,Bangledesh.svg
+204,Taiwan,Tajwan,886,Republic of China.svg
+205,Turkiye,Turcja,90,Turkiye.svg
+206,India,Indie,91,India.svg
+207,Pakistan,Pakistan,92,Pakistan.svg
+208,Afghanistan,Afganistan,93,Afghanistan.svg
+209,Sri Lanka,Sri Lanka,94,Sri Lanka.svg
+210,Myanmar,Myanmar,95,Myanmar.svg
+211,Maldives,Malediwy,960,Maldives.svg
+212,Lebanon,Liban,961,Lebanon.svg
+213,Jordan,Jordania,962,Jordan.svg
+214,Syrian Arab Republic,Syryjska Republika Arabska,963,Syria.svg
+215,Iraq,Irak,964,Iraq.svg
+216,Kuwait,Kuwejt,965,Kuwait.svg
+217,Saudi Arabia,Arabia Saudyjska,966,Saudi Arabia.svg
+218,Yemen,Jemen,967,Yemen.svg
+219,Oman,Oman,968,Oman.svg
+220,Palestinian Territory Occupied,Okupowane Terytorium Palestyny,970,Palestine.svg
+221,United Arab Emirates,Zjednoczone Emiraty Arabskie,971,United Arab Emirate.svg
+222,Israel,Izrael,972,Isreal.svg
+223,Bahrain,Bahrajn,973,Bahrain.svg
+224,Qatar,Katar,974,Qatar.svg
+225,Bhutan,Bhutan,975,Bhutan.svg
+226,Mongolia,Mongolia,976,Mongolia.svg
+227,Nepal,Nepal,977,Nepal.svg
+228,Iran,Iran,98,Iran.svg
+229,Tajikistan,Tadżykistan,992,Tajikistan.svg
+230,Turkmenistan,Turkmenistan,993,Turkmenistan.svg
+231,Azerbaijan,Azerbejdżan,994,Azerbaijan.svg
+232,Georgia,Gruzja,995,Georgia.svg
+233,Kyrgyzstan,Kirgistan,996,Kyrgyzstan.svg
+234,Uzbekistan,Uzbekistan,998,Uzbekistan.svg

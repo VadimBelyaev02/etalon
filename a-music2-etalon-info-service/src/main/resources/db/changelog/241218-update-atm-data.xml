@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="update-atm-data-1" author="Marat">
+        <update tableName="atm">
+            <column name="address" value="CH Alfa Centrum, ul. Kołobrzeska 41b"/>
+            <where>address = 'ul. Gałczyńskiego 2'</where>
+        </update>
+        <update tableName="atm">
+            <column name="address" value="ul. Gałczyńskiego 2"/>
+            <where>address = 'ul. Trubadurów 15'</where>
+        </update>
+        <update tableName="atm">
+            <column name="address" value="ul. Trubadurów 15"/>
+            <where>address = 'ul. Na Ostrowiu 1'</where>
+        </update>
+        <update tableName="atm">
+            <column name="address" value="ul. Na Ostrowiu 1"/>
+            <where>address = 'Osiedle Teatralne 12'</where>
+        </update>
+    </changeSet>
+</databaseChangeLog>

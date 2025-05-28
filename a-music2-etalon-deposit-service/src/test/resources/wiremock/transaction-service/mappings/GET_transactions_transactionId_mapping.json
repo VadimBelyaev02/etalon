@@ -1,0 +1,41 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/transaction/api/v1/transactions/50",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_transactions_transactionId.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/transaction/api/v1/transactions/1",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": 1,
+          "transactionDate": "16.02.2024",
+          "transactionTime": "04:29:15",
+          "transactionName": "Opening a Smooth profit deposit",
+          "outcomeAccountNumber": "PL05234567840000000000000000",
+          "incomeAccountNumber": "PL76234567840000000000000123",
+          "transactionAmount": 500,
+          "type": "INCOME",
+          "status": "APPROVED",
+          "eventType": "BODY"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "status": "APPROVED",
+    "type": "INCOME",
+    "amount": 10,
+    "accountNumber": "PL04234567840000000000000001",
+    "createAt": "2023-10-07T10:00:00Z",
+    "name": "transactionName"
+  },
+  {
+    "id": "2",
+    "status": "APPROVED",
+    "type": "INCOME",
+    "amount": 100,
+    "accountNumber": "PL04234567840000000000000001",
+    "createAt": "2023-10-08T10:00:00Z",
+    "name": "transactionName"
+  },
+  {
+    "id": "3",
+    "status": "DECLINED",
+    "type": "OUTCOME",
+    "amount": 10,
+    "accountNumber": "PL04234567840000000000000001",
+    "createAt": "2023-10-09T10:00:00Z",
+    "name": "transactionName"
+  },
+  {
+    "id": "4",
+    "status": "PROCESSING",
+    "type": "OUTCOME",
+    "amount": 10,
+    "accountNumber": "PL04234567840000000000000001",
+    "createAt": "2023-10-10T10:00:00Z",
+    "name": "transactionName"
+  }
+]

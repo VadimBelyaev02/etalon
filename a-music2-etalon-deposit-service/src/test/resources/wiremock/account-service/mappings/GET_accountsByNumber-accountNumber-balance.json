@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000001/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "{\"accountBalance\": 9000.0}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": 123,
+  "transactionDate": "04.10.2023",
+  "transactionTime": "08:19:15",
+  "transactionName": "open_new_deposit",
+  "outcomeAccountNumber": "PL46234567840000000000000056",
+  "incomeAccountNumber": "PL27234567840000000000000172",
+  "transactionAmount": 900.56,
+  "currency": "PLN",
+  "type": "INCOME",
+  "status": "APPROVED"
+}

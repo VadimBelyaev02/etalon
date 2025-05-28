@@ -1,0 +1,28 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/card/api/v1/cards/cards-info?accountNumber=PL48234567840000000000000050",
+        "method": "GET"
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "cardProductName": "Enjoy",
+            "accountNumber": "PL48234567840000000000000050",
+            "maskedCardNumber": "*5213"
+          },
+          {
+            "cardProductName": "Enjoy",
+            "accountNumber": "PL48234567840000000000000050",
+            "maskedCardNumber": "*9521"
+          }
+        ]
+      }
+    }
+  ]
+}

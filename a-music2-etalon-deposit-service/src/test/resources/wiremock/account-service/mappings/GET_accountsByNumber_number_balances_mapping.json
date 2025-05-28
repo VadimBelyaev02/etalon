@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPattern": "/account/api/v1/accounts-by-number(?!/.*)\\\\?.*",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber_number_balances_response_ok.json"
+      }
+    }
+  ]
+}

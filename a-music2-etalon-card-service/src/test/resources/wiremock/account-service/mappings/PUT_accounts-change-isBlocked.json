@@ -1,0 +1,22 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPath": "/account/api/v1/accounts-by-number/blocking",
+        "method": "PUT",
+        "queryParameters": {
+          "accountNumber": {
+            "equalTo": "1234567812345678"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "true"
+      }
+    }
+  ]
+}

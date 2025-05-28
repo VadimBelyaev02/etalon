@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/user/api/v1/users/user/details",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_users_userId_details_ok.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/user/api/v1/users/invalidUser/details",
+        "method": "GET"
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_users_userId_details_bad-request.json"
+      }
+    }
+  ]
+}

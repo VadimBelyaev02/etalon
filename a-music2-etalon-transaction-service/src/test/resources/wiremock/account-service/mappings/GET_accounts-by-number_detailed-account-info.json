@@ -1,0 +1,83 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/4",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": 4,
+          "iban": "PL04234567840000000000000005",
+          "userId": 2,
+          "balance": 1000,
+          "isBlocked": true
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000111",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "999",
+          "iban": "PL48234567840000000000000111",
+          "userId": "transfer-user",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000222",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "998",
+          "iban": "PL48234567840000000000000222",
+          "userId": "transfer-user",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "USD"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL48234567840000000000000333",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "997",
+          "iban": "PL48234567840000000000000333",
+          "userId": "transfer-user",
+          "balance": 1000,
+          "isBlocked": false,
+          "currency": "EUR"
+        }
+      }
+    }
+  ]
+}

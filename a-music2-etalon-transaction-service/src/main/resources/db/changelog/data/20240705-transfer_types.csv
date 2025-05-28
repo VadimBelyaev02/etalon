@@ -1,0 +1,4 @@
+id,name,type
+1,Transfer money between accounts,TO_ANOTHER_ACCOUNT
+2,Card – to – card transfers,TO_CARD
+3,Transfer money between my accounts,TO_MY_ACCOUNT

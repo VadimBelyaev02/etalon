@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000001/replenished",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "{\"loanId\": 1}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "1",
+  "email": " 'test01@gmail.com'",
+  "firstName": "Pavel",
+  "lastName": "Kowalski",
+  "pesel": "87100216355",
+  "phoneNumber": "48529304229",
+  "address": {
+    "voivodeship": "",
+    "city": "Minsk",
+    "street": "",
+    "building": "1",
+    "apartment": "None",
+    "postCode": "1231"
+  },
+  "employmentData": {
+    "position": "Manager",
+    "placeOfWork": "Andersen"
+  },
+  "createAt": "2024-03-06T17:55:27.8Z",
+  "updateAt": "2024-03-06T17:55:30.506Z"
+}

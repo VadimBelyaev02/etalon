@@ -1,0 +1,97 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/card/api/v1/cards-by-number/4246700000001090",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": 3,
+          "expirationDate": "2024-06-16T14:26:52Z",
+          "issuer": "VISA",
+          "productType": "CREDIT",
+          "productName": "Etalon",
+          "number": "4246700000001090",
+          "accountNumber": "1",
+          "balance": 5000.0,
+          "currency": "PLN",
+          "isBlocked": false,
+          "status": "ACTIVE",
+          "cardholderName": "ROBERT SMITH",
+          "cvv": 333,
+          "withdrawLimit": 2000.5,
+          "transferLimit": 1000,
+          "dailyExpenseLimit": 1000,
+          "bankBranchId": 1
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards-by-number/4246700000001025",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": 3,
+          "expirationDate": "2024-06-16T14:26:52Z",
+          "issuer": "VISA",
+          "productType": "CREDIT",
+          "productName": "Etalon",
+          "number": "4246700000001025",
+          "accountNumber": "2",
+          "balance": 5000.0,
+          "currency": "PLN",
+          "isBlocked": false,
+          "status": "ACTIVE",
+          "cardholderName": "ROBERT SMITH",
+          "cvv": 333,
+          "withdrawLimit": 2000.5,
+          "transferLimit": 1000,
+          "dailyExpenseLimit": 1000,
+          "bankBranchId": 1
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards-by-number/3246700000001120",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": 3,
+          "expirationDate": "2024-06-16T14:26:52Z",
+          "issuer": "VISA",
+          "productType": "CREDIT",
+          "productName": "Etalon",
+          "number": "3246700000001120",
+          "accountNumber": "3",
+          "balance": 5000.0,
+          "currency": "PLN",
+          "isBlocked": false,
+          "status": "ACTIVE",
+          "cardholderName": "PAUL SHMIDT",
+          "cvv": 333,
+          "withdrawLimit": 2000.5,
+          "transferLimit": 1000,
+          "dailyExpenseLimit": 1000,
+          "bankBranchId": 1
+        }
+      }
+    }
+  ]
+}

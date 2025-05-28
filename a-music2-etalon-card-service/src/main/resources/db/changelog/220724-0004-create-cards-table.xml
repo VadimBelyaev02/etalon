@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0004_create-sequence-for-card-table" author="itaren">
+        <createSequence sequenceName="card_sequence" dataType="bigint" startValue="1"/>
+    </changeSet>
+
+    <changeSet id="0005-create-cards-table" author="itaren">
+        <createTable tableName="cards">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expiration_date" type="timestamp with time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="number" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="updated_at" type="timestamp with time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="timestamp with time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="blocked" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="blocking_reason" type="varchar"/>
+            <column name="account_number" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cardholder_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cvv" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="withdraw_limit" type="numeric" defaultValueNumeric="2000"/>
+            <column name="transfer_limit" type="numeric" defaultValueNumeric="1000"/>
+            <column name="daily_expense_limit" type="numeric" defaultValueNumeric="1000"/>
+            <column name="product_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_card_to_product" references="products(id)"/>
+            </column>
+            <column name="bank_branch_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0006_insert-into-cards-table" author="itaren">
+        <loadData tableName="cards"
+                  file="data/240529-foreign-banks-cards.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

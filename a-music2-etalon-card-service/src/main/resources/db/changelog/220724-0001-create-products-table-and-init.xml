@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0001_create-sequence-for-products-table" author="itaren">
+        <createSequence
+                sequenceName="products_sequence"
+                dataType="bigint"
+                startValue="7"/>
+    </changeSet>
+
+    <changeSet id="0002-create-products-table" author="itaren">
+        <createTable tableName="products">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="product_type" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="issuer" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="validity" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="issuance_fee" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="annual_maintenance_fee" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="apr" type="numeric"/>
+            <column name="cashback" type="numeric"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="0003_insert-into-products-table" author="itaren">
+        <loadData tableName="products"
+                  file="data/220724-products.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

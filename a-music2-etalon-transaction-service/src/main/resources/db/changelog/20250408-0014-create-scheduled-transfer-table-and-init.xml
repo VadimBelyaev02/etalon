@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0011-create-scheduled-transfer-and-date-tables" author="Alexey Leshchuk">
+
+
+        <createSequence
+                sequenceName="scheduled_transfer_sequence"
+                dataType="bigint"
+                startValue="1"/>
+        
+        <createTable tableName="scheduled_transfer">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="schedule_status" type="varchar(31)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="schedule_frequency" type="varchar(31)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transfer_type" type="varchar(31)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount" type="numeric(19, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currency" type="varchar(3)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sender_account_number" type="varchar(31)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="beneficiary_account_number" type="varchar(31)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="start_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="end_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="next_transfer_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="timestamp with time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="timestamp with time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="varchar(15)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createSequence
+                sequenceName="scheduled_transfer_date_sequence"
+                dataType="bigint"
+                startValue="1"/>
+
+        <createTable tableName="scheduled_transfer_date">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="scheduled_transfer_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transfer_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseTableName="scheduled_transfer_date"
+                baseColumnNames="scheduled_transfer_id"
+                referencedTableName="scheduled_transfer"
+                referencedColumnNames="id"
+                constraintName="fk_scheduled_transfer_date_transfer"/>
+    </changeSet>
+
+</databaseChangeLog>

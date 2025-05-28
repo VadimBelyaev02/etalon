@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0021-create-bank-info-table" author="Yaniv">
+        <createSequence
+                sequenceName="bank_info_sequence"
+                dataType="bigint"
+                startValue="11"/>
+        <createTable tableName="bank_info">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="full_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="call_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0022-add-bank-info-data" author="Yaniv">
+        <loadData tableName="bank_info"
+                  file="data/240317-bank-info.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

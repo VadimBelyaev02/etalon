@@ -1,0 +1,8 @@
+{
+  "id": 2,
+  "iban": "PL27234567840000000000000172",
+  "userId": "user",
+  "balance": 2000,
+  "isBlocked": false,
+  "currency": "PLN"
+}

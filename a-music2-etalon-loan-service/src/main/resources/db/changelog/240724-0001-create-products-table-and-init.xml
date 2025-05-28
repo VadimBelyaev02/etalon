@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0001-create-sequence-for-products-table" author="itaren">
+        <createSequence
+                sequenceName="products_sequence"
+                dataType="bigint"
+                startValue="4"/>
+    </changeSet>
+
+    <changeSet id="0002-create-products-table" author="itaren">
+        <createTable tableName="products">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="duration" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="apr" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="guarantors" type="integer"/>
+            <column name="min_amount" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="max_amount" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="monthly_commission" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addUniqueConstraint
+                columnNames="name"
+                constraintName="loan_products_name_key"
+                tableName="products"/>
+    </changeSet>
+
+    <changeSet id="0003-insert-into-products-table" author="itaren">
+        <loadData tableName="products"
+                  file="data/240724-products.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

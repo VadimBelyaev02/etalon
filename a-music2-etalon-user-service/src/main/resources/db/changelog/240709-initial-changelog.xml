@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0001-create-user-table" author="Pazniak">
+
+        <createTable tableName="users">
+            <column name="id" type="varchar">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="email" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="pesel" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="first_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="voivodeship" type="varchar"/>
+            <column name="city" type="varchar"/>
+            <column name="street" type="varchar"/>
+            <column name="building" type="varchar"/>
+            <column name="apartment" type="varchar"/>
+            <column name="post_code" type="varchar(6)"/>
+            <column name="place_of_work" type="varchar"/>
+            <column name="position" type="varchar"/>
+            <column name="phone_number" type="varchar">
+                <constraints unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0002-create-roles-table" author="Valovich">
+        <createTable tableName="roles">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="role_name" type="varchar(60)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0003-create-index-for-user-table" author="Valovich">
+
+        <createIndex tableName="users"
+                     indexName="users_idx_email">
+            <column name="email"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="0004-create-sequence-for-roles-table" author="Valovich">
+        <createSequence
+                sequenceName="role_sequence"
+                dataType="bigint"
+                startValue="2"/>
+    </changeSet>
+
+    <changeSet id="0005-create-user-to-role" author="Valovich">
+        <createTable tableName="user_to_role">
+            <column name="role_id" type="bigint">
+                <constraints nullable="false" primaryKey="true"
+                             foreignKeyName="fk_role_to_user" references="roles(id)"/>
+            </column>
+            <column name="user_id" type="varchar">
+                <constraints nullable="false" primaryKey="true"
+                             foreignKeyName="fk_user_to_role" references="users(id)"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

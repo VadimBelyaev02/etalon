@@ -1,0 +1,9 @@
+payment_product_id,tax_type,recipient_name,tax_department_id
+11,PROPERTY_TAX,Taxes PL,1
+17,INCOME_TAX,Taxes PL,1
+18,PROPERTY_TAX,Taxes PL,2
+12,INCOME_TAX,Taxes PL,2
+19,PROPERTY_TAX,Taxes PL,3
+20,INCOME_TAX,Taxes PL,3
+21,PROPERTY_TAX,Taxes PL,4
+22,INCOME_TAX,Taxes PL,4

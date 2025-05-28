@@ -1,0 +1,166 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=USD",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PLN",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=EUR",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PL48234567840000000000000012",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PL48234567840000000000000249",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PL48234567840000000000000031",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PL48234567840000000000000111",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PL48234567840000000000000333",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/banks/search?iban=PL48234567840000000000000222",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "isForeignBank": false,
+          "fullName": null,
+          "callName": null,
+          "bankDetails": null
+        }
+      }
+    }
+  ]
+}

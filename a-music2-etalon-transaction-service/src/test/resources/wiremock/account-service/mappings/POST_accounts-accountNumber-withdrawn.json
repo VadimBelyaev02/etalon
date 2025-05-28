@@ -1,0 +1,49 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPattern": "/account/internal/api/v1/accounts/([0-9]*)/withdrawn",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "message": "Account balance withdrawn successfully"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts/PL48234567840000000000000031/withdrawn",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "message": "Account balance withdrawn successfully"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts/PL48234567840000000000000011/withdrawn",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "message": "Account balance withdrawn successfully"
+        }
+      }
+    }
+  ]
+}

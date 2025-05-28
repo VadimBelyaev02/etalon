@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/info/internal/api/v1/confirmations/USER_REGISTRATION/4",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_confirmation_status_confirmed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0015-alter-transfers-table" author="Ainura">
+        <modifyDataType tableName="transfers" columnName="amount" newDataType="numeric(1000, 2)"/>
+
+        <modifyDataType tableName="transfers" columnName="fee" newDataType="numeric(1000, 2)"/>
+
+        <modifyDataType tableName="transfers" columnName="fee_rate" newDataType="numeric(1000, 2)"/>
+
+        <modifyDataType tableName="transfers" columnName="standard_rate" newDataType="numeric(1000, 2)"/>
+    </changeSet>
+
+</databaseChangeLog>

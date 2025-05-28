@@ -1,0 +1,31 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts",
+        "method": "POST",
+        "headers": {
+          "Content-Type": {
+            "equalTo": "application/json"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "userId": "user",
+              "type": "CARD",
+              "currency": "PLN"
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "POST_accounts_ok.json"
+      }
+    }
+  ]
+}

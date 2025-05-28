@@ -1,0 +1,245 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000001",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_DetailedAccountResponseDto_ok.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000002",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000002",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000003",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000003",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000004",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000002",
+          "userId": "anotherUser",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000005",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000002",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": true,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000006",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000006",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": true,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000007",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000007",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": true,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000008",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000008",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": true,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000009",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000009",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000010",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000010",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000011",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000011",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000012",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000012",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts-by-number/PL04234567840000000000000013",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "iban": "PL04234567840000000000000013",
+          "userId": "user",
+          "balance": 2.14,
+          "isBlocked": false,
+          "currency": "PLN"
+        }
+      }
+    }
+  ]
+}

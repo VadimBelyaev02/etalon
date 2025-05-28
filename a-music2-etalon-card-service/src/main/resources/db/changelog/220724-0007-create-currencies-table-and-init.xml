@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0007_create-sequence-for-currencies-table" author="itaren">
+        <createSequence
+                sequenceName="currencies_sequence"
+                dataType="bigint"
+                startValue="1"/>
+    </changeSet>
+
+    <changeSet id="0008-create-currencies-table" author="itaren">
+        <createTable tableName="currencies">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="currency_code" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currency_name" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0009_insert-into-currencies-table" author="itaren">
+        <loadData tableName="currencies"
+                  file="data/240129-currencies.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

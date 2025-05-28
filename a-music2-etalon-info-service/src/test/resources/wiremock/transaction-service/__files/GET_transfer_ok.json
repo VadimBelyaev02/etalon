@@ -1,0 +1,33 @@
+{
+  "id": "123",
+  "transferType": {
+    "id": "1",
+    "name": "Transfer money between accounts",
+    "transferType": "TO_ANOTHER_ACCOUNT"
+  },
+  "transaction": {
+    "id": 1,
+    "transactionDate": "23.11.2023",
+    "transactionTime": "06:47:24",
+    "transactionName": "transactionName",
+    "outcomeAccountNumber": "PL27234567840000000000000172",
+    "incomeAccountNumber": "PL46234567840000000000000056",
+    "transactionAmount": 10,
+    "type": "INCOME",
+    "status": "APPROVED",
+    "eventType": "BODY"
+  },
+  "createAt": "2023-11-23T18:47:24.613519+01:00",
+  "updateAt": "2023-11-23T18:47:36.276218+01:00",
+  "description":"Money transfer",
+  "userId": "user",
+  "totalAmount": 1200,
+  "amount": 1000,
+  "fee": 200,
+  "senderAccountNumber": "PL04234567840000000000000001",
+  "beneficiaryAccountNumber": "PL04234567840000000000000002",
+  "senderFullName": "Martha Kowalska",
+  "beneficiaryFullName": "Martha Kowalska",
+  "beneficiaryBank": "Etalon bank",
+  "status": "APPROVED"
+}

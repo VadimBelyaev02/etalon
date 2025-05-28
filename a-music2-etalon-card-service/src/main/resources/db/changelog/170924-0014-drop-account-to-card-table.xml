@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0014-drop-account-to-card-table" author="ayarashuk">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="account_to_card"/>
+        </preConditions>
+
+        <dropForeignKeyConstraint
+                baseTableName="account_to_card"
+                constraintName="fk_account_to_card_card_id_to_cards_id" />
+        <dropTable tableName="account_to_card" />
+    </changeSet>
+</databaseChangeLog>

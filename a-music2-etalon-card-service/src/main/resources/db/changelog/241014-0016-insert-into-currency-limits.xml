@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0016-insert-into-currency-limits" author="laurabissoltan">
+        <insert tableName="currency_limits">
+            <column name="currency_code" value="USD"/>
+            <column name="withdraw_limit" valueNumeric="1000"/>
+            <column name="transfer_limit" valueNumeric="500"/>
+            <column name="daily_expense_limit" valueNumeric="500"/>
+        </insert>
+        <insert tableName="currency_limits">
+            <column name="currency_code" value="EUR"/>
+            <column name="withdraw_limit" valueNumeric="1000"/>
+            <column name="transfer_limit" valueNumeric="500"/>
+            <column name="daily_expense_limit" valueNumeric="500"/>
+        </insert>
+        <insert tableName="currency_limits">
+            <column name="currency_code" value="PLN"/>
+            <column name="withdraw_limit" valueNumeric="2000"/>
+            <column name="transfer_limit" valueNumeric="1000"/>
+            <column name="daily_expense_limit" valueNumeric="1000"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

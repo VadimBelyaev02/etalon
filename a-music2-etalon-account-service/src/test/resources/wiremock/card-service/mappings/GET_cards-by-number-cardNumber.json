@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/card/api/v1/cards-by-number/4246700000000100",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_cards-by-number-cardNumber_ok.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPattern": "/transaction/api/v1/transactions/\\d+",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_transactions_transactionId_ok.json"
+      }
+    },
+    {
+      "request": {
+        "urlPattern": "/transaction/api/v1/transactions/911",
+        "method": "GET"
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_transactions_transactionId_bad-request.json"
+      }
+    }
+  ]
+}

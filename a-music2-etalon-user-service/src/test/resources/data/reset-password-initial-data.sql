@@ -1,0 +1,3 @@
+insert into reset_password (reset_password_id, user_id, email, token, created_at, expires_at, status)
+values (1, 'user', 'test01@gmail.com', '11111111-1111-1111-1111-111111111111', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP + INTERVAL '1 HOUR', 'CREATED'),
+       (2, 'user', 'test01@gmail.com', '00000000-0000-0000-0000-000000000000', CURRENT_TIMESTAMP - INTERVAL '2 HOUR', CURRENT_TIMESTAMP - INTERVAL '1 HOUR', 'CREATED');

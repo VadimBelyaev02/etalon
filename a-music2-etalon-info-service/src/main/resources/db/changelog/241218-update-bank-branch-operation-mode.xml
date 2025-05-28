@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="update-bank-branch-operation-mode" author="Marat">
+        <update tableName="bank_branches_operation_mode">
+            <column name="opening_time" value="09:00:00 +03:00" />
+            <column name="closing_time" value="21:00:00 +03:00" />
+            <where>id = 37</where>
+        </update>
+        <insert tableName="bank_branches_operation_mode">
+            <column name="id" value="61"/>
+            <column name="bank_branches_id" value="7"/>
+            <column name="day_of_week" value="SUNDAY"/>
+            <column name="opening_time" value="10:00:00 +03:00"/>
+            <column name="closing_time" value="20:00:00 +03:00"/>
+        </insert>
+        <update tableName="bank_branches_operation_mode">
+            <column name="opening_time" value="09:00:00 +03:00" />
+            <column name="closing_time" value="21:00:00 +03:00" />
+            <where>id = 48</where>
+        </update>
+        <insert tableName="bank_branches_operation_mode">
+            <column name="id" value="62"/>
+            <column name="bank_branches_id" value="9"/>
+            <column name="day_of_week" value="SUNDAY"/>
+            <column name="opening_time" value="10:00:00 +03:00"/>
+            <column name="closing_time" value="20:00:00 +03:00"/>
+        </insert>
+        <update tableName="bank_branches_operation_mode">
+            <column name="opening_time" value="09:00:00 +03:00" />
+            <column name="closing_time" value="21:00:00 +03:00" />
+            <where>id = 54</where>
+        </update>
+        <insert tableName="bank_branches_operation_mode">
+            <column name="id" value="63"/>
+            <column name="bank_branches_id" value="10"/>
+            <column name="day_of_week" value="SUNDAY"/>
+            <column name="opening_time" value="10:00:00 +03:00"/>
+            <column name="closing_time" value="20:00:00 +03:00"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

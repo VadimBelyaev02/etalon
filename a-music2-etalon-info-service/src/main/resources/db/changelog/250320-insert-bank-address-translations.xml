@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <changeSet id="250320-insert-bank-address-translations" author="Ainura">
+        <insert tableName="bank_address_translations">
+            <column name="bank_contact_id" value="1"/>
+            <column name="locale" value="pl"/>
+            <column name="value" value="ul. Jana Pawła, 10, 00-854 Warszawa"/>
+        </insert>
+        <sql>
+            INSERT INTO bank_address_translations (bank_contact_id, locale, value)
+            SELECT id, 'en', address
+            FROM bank_contacts
+            WHERE address IS NOT NULL;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,14 @@
+id,atm_name,city,address
+1,ATM 200,Warsaw,"Galeria Mokotów, Wołoska 12, Floor: 1"
+2,ATM 201,Warsaw,ul. Wierzejeskiego 12
+3,ATM 202,Warsaw,16 Senatorska Str. 00-923
+4,ATM 300,Gdansk,ul. Gałczyńskiego 2
+5,ATM 301,Gdansk,ul. Trubadurów 15
+6,ATM 302,Gdansk,ul. Na Ostrowiu 1
+7,ATM 303,Gdansk,Osiedle Teatralne 12
+8,ATM 400,Krakow,"Legionów Józefa Piłsudskiego 13"
+9,ATM 401,Krakow,ul. Pilotów 37
+10,ATM 402,Krakow,ul. Królewska 88
+11,ATM 500,Lublin,"Atrium Felicity, Al. W.Witosa 32, Floor: 0"
+12,ATM 501,Lublin,ul. Kapucyńska 4
+13,ATM 502,Lublin,ul. Witolda Chodźki 14

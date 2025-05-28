@@ -1,0 +1,2 @@
+truncate auth_confirmations cascade;
+alter sequence auth_confirmations_sequence restart;

@@ -1,0 +1,199 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000001/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000002/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000003/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000004/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000005/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000006/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000007/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000008/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000009/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000010/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000011/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000012/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000013/balance",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "accountBalance": 2.14
+        }
+      }
+    }
+  ]
+}

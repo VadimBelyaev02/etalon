@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <changeSet id="20250320-create-bank-address-translations" author="Ainura">
+        <createTable tableName="bank_address_translations">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="bank_contact_id" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
+            <column name="locale" type="VARCHAR(2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="value" type="TEXT">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="bank_address_translations"
+                                 baseColumnNames="bank_contact_id"
+                                 referencedTableName="bank_contacts"
+                                 referencedColumnNames="id"
+                                 constraintName="fk_bank_address_translations_key"/>
+
+        <createIndex indexName="idx_bank_address_locale" tableName="bank_address_translations">
+            <column name="locale"/>
+        </createIndex>
+
+        <addUniqueConstraint tableName="bank_address_translations"
+                             columnNames="bank_contact_id, locale"
+                             constraintName="uq_bank_address_bank_contact_id_locale"/>
+    </changeSet>
+
+</databaseChangeLog>

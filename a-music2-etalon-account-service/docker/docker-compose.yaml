@@ -1,0 +1,29 @@
+version: "3.5"
+
+services:
+
+  account-service:
+    hostname: account-service
+    container_name: account-service
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: account-service
+    restart: always
+    ports:
+      - "9001:9001"
+    environment:
+      SPRING_DATASOURCE_USERNAME: $AND_DB_USER
+      SPRING_DATASOURCE_PASSWORD: $AND_DB_PASS
+      SPRING_DATASOURCE_URL: $AND_DB_URL
+      SPRING_LIQUIBASE_USERNAME: $AND_DB_USER
+      SPRING_LIQUIBASE_PASSWORD: $AND_DB_PASS
+      SPRING_LIQUIBASE_URL: $AND_DB_URL
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: $AND_EUREKA_URL
+    networks:
+      - amusic2-etalon-net
+
+networks:
+  amusic2-etalon-net:
+    name: amusic2-local
+    driver: bridge

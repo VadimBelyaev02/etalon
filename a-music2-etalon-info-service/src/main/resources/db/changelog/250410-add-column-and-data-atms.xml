@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="20250410-001-atm" author="Alexey Leshchuk">
+        <addColumn tableName="atm">
+            <column name="latitude" type="varchar" defaultValue="0.0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="longitude" type="varchar" defaultValue="0.0">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="20250410-001-update-atm-coordinates" author="Alexey Leshchuk">
+        <update tableName="atm">
+            <column name="latitude" value="52.17890725626939"/>
+            <column name="longitude" value="21.003705008940894"/>
+            <where>atm_name = 'ATM 200'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="52.28733884046006"/>
+            <column name="longitude" value="21.018144726136022"/>
+            <where>atm_name = 'ATM 201'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="52.244835070823"/>
+            <column name="longitude" value="21.009826183804773"/>
+            <where>atm_name = 'ATM 202'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="54.404509724163105"/>
+            <column name="longitude" value="18.588073885763823"/>
+            <where>atm_name = 'ATM 300'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="54.40673799489559"/>
+            <column name="longitude" value="18.638844055080536"/>
+            <where>atm_name = 'ATM 301'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="54.37403956493997"/>
+            <column name="longitude" value="18.62649778391422"/>
+            <where>atm_name = 'ATM 302'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="54.36972467413277"/>
+            <column name="longitude" value="18.662791082066043"/>
+            <where>atm_name = 'ATM 303'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="50.04426657181785"/>
+            <column name="longitude" value="19.947028026024334"/>
+            <where>atm_name = 'ATM 400'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="50.07871942210145"/>
+            <column name="longitude" value="19.97155291253221"/>
+            <where>atm_name = 'ATM 401'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="50.07307347500353"/>
+            <column name="longitude" value="19.91475943951947"/>
+            <where>atm_name = 'ATM 402'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="51.23192631622309"/>
+            <column name="longitude" value="22.61444873957678"/>
+            <where>atm_name = 'ATM 500'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="51.24718577765871"/>
+            <column name="longitude" value="22.56191945491921"/>
+            <where>atm_name = 'ATM 501'</where>
+        </update>
+        <update tableName="atm">
+            <column name="latitude" value="51.26653462789879"/>
+            <column name="longitude" value="22.559939666565914"/>
+            <where>atm_name = 'ATM 502'</where>
+        </update>
+    </changeSet>
+
+    <changeSet id="20250410-002-bank-branches" author="Alexey Leshchuk">
+        <addColumn tableName="bank_branches">
+            <column name="latitude" type="varchar" defaultValue="0.0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="longitude" type="varchar" defaultValue="0.0">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="20250410-002-bank-branches-update" author="Alexey Leshchuk">
+        <update tableName="bank_branches">
+            <column name="latitude" value="52.27070646377571"/>
+            <column name="longitude" value="20.950695212641474"/>
+            <where>bank_branch_name = 'Bank Branch (I)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="52.1662593450922"/>
+            <column name="longitude" value="21.085069326129968"/>
+            <where>bank_branch_name = 'Bank Branch (II)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="52.214893443570176"/>
+            <column name="longitude" value="20.980319997296913"/>
+            <where>bank_branch_name = 'Bank Branch (III)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="52.17890725626939"/>
+            <column name="longitude" value="21.003705008940894"/>
+            <where>bank_branch_name = 'Bank Branch (IV)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="54.35832160214517"/>
+            <column name="longitude" value="18.58774165322997"/>
+            <where>bank_branch_name = 'Bank Branch (V)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="54.42038587764363"/>
+            <column name="longitude" value="18.582479755484346"/>
+            <where>bank_branch_name = 'Bank Branch (VI)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="54.404509724163105"/>
+            <column name="longitude" value="18.588073885763823"/>
+            <where>bank_branch_name = 'Bank Branch (VII)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="50.07728183336965"/>
+            <column name="longitude" value="20.03122638279209"/>
+            <where>bank_branch_name = 'Bank Branch (VIII)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="50.04426657181785"/>
+            <column name="longitude" value="19.947028026024334"/>
+            <where>bank_branch_name = 'Bank Branch (IX)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="51.23192631622309"/>
+            <column name="longitude" value="22.61444873957678"/>
+            <where>bank_branch_name = 'Bank Branch (X)'</where>
+        </update>
+        <update tableName="bank_branches">
+            <column name="latitude" value="51.26650777582996"/>
+            <column name="longitude" value="22.55996112423676"/>
+            <where>bank_branch_name = 'Bank Branch (XI)'</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>

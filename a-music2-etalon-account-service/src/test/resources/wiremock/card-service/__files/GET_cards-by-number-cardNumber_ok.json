@@ -1,0 +1,24 @@
+{
+  "id": 10,
+  "expirationDate": "2027-03-31T16:36:24.24889Z",
+  "issuer": "VISA",
+  "productType": "CREDIT",
+  "productName": "Etalon",
+  "number": "4246700000000100",
+  "accountNumber": "PL04234567840000000000000001",
+  "balance": 0,
+  "availableCurrencies": [
+    "PLN"
+  ],
+  "accounts": {
+    "PL04234567840000000000000001": "PLN"
+  },
+  "isBlocked": false,
+  "status": "ACTIVE",
+  "cardholderName": "Pavel Kowalski",
+  "cvv": 933,
+  "withdrawLimit": 2000,
+  "transferLimit": 1000,
+  "dailyExpenseLimit": 1000,
+  "bankBranchId": 1
+}

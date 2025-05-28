@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  SERVICE_NAME:
+    container_name: $APP-$CI_COMMIT_BRANCH
+    hostname: $APP
+    image: $AND_DOCKER_REGISTRY_NAME/$PROJECT-$APP:$CI_COMMIT_BRANCH
+    ports:
+      - $PORT:$PORT
+    restart: always
+    env_file: $AND_ENV
+    environment:
+      SERVICE_PORT: $PORT
+    logging:
+      driver: loki
+      options:
+        loki-url: http://127.0.0.1:3100/loki/api/v1/push
+        max-size: 300m
+    networks:
+      - a-music2-etalon
+
+networks:
+  a-music2-etalon:
+    driver: bridge

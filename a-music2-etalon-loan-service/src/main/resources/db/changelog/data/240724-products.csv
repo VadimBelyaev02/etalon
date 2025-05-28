@@ -1,0 +1,5 @@
+id,name,duration,APR,guarantors,min_amount,max_amount,monthly_commission
+1,Easy loan,1,24.81,,1000,200000,20
+2,Cash loan,2,12.83,1,5000,15000,0
+3,Car loan,5,9.5,2,10000,80000,0
+

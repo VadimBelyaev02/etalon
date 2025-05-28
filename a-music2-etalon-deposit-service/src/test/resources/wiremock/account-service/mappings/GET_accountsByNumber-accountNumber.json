@@ -1,0 +1,69 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000001",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber-accountNumber_ok.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000005",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber-accountNumber_belongsToUser2.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000006",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber-accountNumber_notBelongsToUser2.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000007",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber-accountNumber_belongsToUser2_blocked.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000009",
+        "method": "GET"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_accountsByNumber-accountNumber_not_found.json"
+      }
+    }
+  ]
+}

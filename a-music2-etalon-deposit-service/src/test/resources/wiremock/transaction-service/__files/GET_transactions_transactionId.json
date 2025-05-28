@@ -1,0 +1,12 @@
+{
+  "id": 50,
+  "transactionDate": "16.02.2024",
+  "transactionTime": "04:29:15",
+  "transactionName": "Opening a Smooth profit deposit",
+  "outcomeAccountNumber": "PL05234567840000000000000000",
+  "incomeAccountNumber": "PL76234567840000000000000123",
+  "transactionAmount": 500,
+  "type": "INCOME",
+  "status": "APPROVED",
+  "eventType": "BODY"
+}

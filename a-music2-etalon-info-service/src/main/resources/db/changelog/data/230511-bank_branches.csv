@@ -1,0 +1,12 @@
+id,bank_branch_name,city,address
+1,Bank Branch (I),Warsaw,Broniewskiego 56A
+2,Bank Branch (II),Warsaw,Przyczółkowa 400
+3,Bank Branch (III),Warsaw,Grójecka 59/63
+4,Bank Branch (IV),Warsaw,"Galeria Mokotów, Wołoska 12, Floor: 1"
+5,Bank Branch (V),Gdansk,Jaśkowa Dolina 132
+6,Bank Branch (VI),Gdansk,Gospody 2
+7,Bank Branch (VII),Gdansk,"CH Alfa Centrum, ul. Kołobrzeska 41b"
+8,Bank Branch (VIII),Krakow,Osiedle Teatralne 12
+9,Bank Branch (IX),Krakow,Legionów Józefa Piłsudskiego 13
+10,Bank Branch (X),Lublin,"Atrium Felicity, Al. W.Witosa 32, Floor: 0"
+11,Bank Branch (XI),Lublin,"CH AUCHAN, ul. Witolda Chodźki 14"

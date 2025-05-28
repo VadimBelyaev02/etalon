@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="create-sequence-for-country-codes-table" author="Leshchuk">
+        <createSequence
+                sequenceName="country_codes_sequence"
+                dataType="bigint"
+                startValue="1"/>
+    </changeSet>
+
+    <changeSet id="create-country-codes" author="Leshchuk">
+        <createTable tableName="country_codes">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="country_name_en" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="country_name_pl" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="phone_code" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image_key" type="varchar">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="250320-insert-into-country-codes-mode-table" author="Leshchuk">
+        <loadData tableName="country_codes"
+                  file="data/250320-country-codes.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

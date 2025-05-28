@@ -1,0 +1,49 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPattern": "/account/internal/api/v1/accounts/([0-9]*)/replenished",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "message": "Account balance replenished successfully"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts/PL48234567840000000000000032/replenished",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "message": "Account balance replenished successfully"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/account/internal/api/v1/accounts/PL48234567840000000000000012/replenished",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "message": "Account balance replenished successfully"
+        }
+      }
+    }
+  ]
+}

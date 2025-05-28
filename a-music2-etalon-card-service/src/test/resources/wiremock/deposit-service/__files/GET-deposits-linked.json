@@ -1,0 +1,10 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "accountNumber": "PL04234567840000000000000001",
+      "status": "CLOSED"
+    }
+  ],
+  "totalElements": 1
+}

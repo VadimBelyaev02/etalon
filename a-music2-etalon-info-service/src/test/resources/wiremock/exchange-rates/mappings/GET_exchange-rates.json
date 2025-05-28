@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPattern": "/service/data/EXR/D.PLN%2BUSD%2BGBP%2BCHF.EUR.SP00.A\\?startPeriod=.*",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_exchange-rates_ok.json"
+      }
+    }
+  ]
+}

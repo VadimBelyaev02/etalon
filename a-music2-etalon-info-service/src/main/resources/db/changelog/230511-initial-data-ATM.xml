@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0011-insert-into-atm-table" author="Yakauleu">
+        <loadData tableName="atm"
+                  file="data/230511-ATM.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+
+    <changeSet id="0012-insert-into-atm-operation-mode-table" author="Yakauleu">
+        <loadData tableName="atm_operation_mode"
+                  file="data/230511-ATM_operation_mode.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="false">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

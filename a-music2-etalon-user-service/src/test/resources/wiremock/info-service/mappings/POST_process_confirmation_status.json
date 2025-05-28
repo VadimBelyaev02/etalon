@@ -1,0 +1,43 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/info/api/v1/confirmations/status",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "POST_process_confirmation_status.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/confirmations",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "POST_create_confirmation_response.json"
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/confirmations/status",
+        "method": "POST"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "POST_process_confirmation_status.json"
+      }
+    }
+  ]
+}

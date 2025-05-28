@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0015-create-sequence-for-contacts-table" author="Yakauleu">
+        <createSequence
+                sequenceName="bank_contacts_sequence"
+                dataType="bigint"
+                startValue="2"/>
+    </changeSet>
+
+    <changeSet id="0016-create-contacts-table" author="Yakauleu">
+        <createTable tableName="bank_contacts">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="bank_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="nip" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="regon" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="swift_code" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="varchar">
+                <constraints nullable="false" unique ="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="0017-create-sequence-for-bank-contacts-operation-mode-table" author="Yakauleu">
+        <createSequence
+                sequenceName="bank_contacts_operation_mode_sequence"
+                dataType="bigint"
+                startValue="8"/>
+    </changeSet>
+
+    <changeSet id="0018-create-bank-contacts-operation-mode-table" author="Yakauleu">
+        <createTable tableName="bank_contacts_operation_mode">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="bank_contact_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_contacts_to_contacts_operation_mode" references="bank_contacts(id)"/>
+            </column>
+            <column name="day_of_week" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="opening_time" type="timetz">
+                <constraints nullable="false"/>
+            </column>
+            <column name="closing_time" type="timetz">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

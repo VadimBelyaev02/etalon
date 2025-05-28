@@ -1,0 +1,96 @@
+{
+  "mappings": [
+    {
+      "priority": 1,
+      "request": {
+        "method": "GET",
+        "urlPath": "/deposit/api/v2/deposits",
+        "queryParameters": {
+          "accountNumber": {
+            "equalTo": "PL04234567840000000000000001"
+          },
+          "statusList": {
+            "contains": "ACTIVE",
+            "contains": "CLOSED"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET-deposits-not-linked.json"
+      }
+    },
+    {
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/deposit/api/v2/deposits",
+        "queryParameters": {
+          "accountNumber": {
+            "equalTo": "PL04234567840000000000000002"
+          },
+          "statusList": {
+            "contains": "ACTIVE",
+            "contains": "CLOSED"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET-deposits-linked.json"
+      }
+    },
+    {
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPath": "/deposit/api/v2/deposits",
+        "queryParameters": {
+          "accountNumber": {
+            "equalTo": "PL04234567840000000000000005"
+          },
+          "statusList": {
+            "contains": "ACTIVE",
+            "contains": "CLOSED"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET-deposits-not-linked.json"
+      }
+    },
+    {
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPath": "/deposit/api/v2/deposits",
+        "queryParameters": {
+          "accountNumber": {
+            "equalTo": "PL04234567840000000000000012"
+          },
+          "statusList": {
+            "contains": "ACTIVE",
+            "contains": "CLOSED"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET-deposits-not-linked.json"
+      }
+    }
+  ]
+}

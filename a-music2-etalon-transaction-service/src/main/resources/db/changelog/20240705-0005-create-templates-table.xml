@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0005-create-templates-table" author="itaren">
+        <createSequence
+                sequenceName="templates_sequence"
+                dataType="bigint"
+                startValue="1"/>
+        <createTable tableName="templates">
+            <column name="template_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="template_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="source" type="varchar"/>
+            <column name="destination" type="varchar"/>
+            <column name="created_at" type="timestamp with time zone"/>
+        </createTable>
+
+        <addUniqueConstraint
+                columnNames="user_id, template_name"
+                constraintName="unique_user_template_name"
+                tableName="templates"/>
+    </changeSet>
+
+</databaseChangeLog>

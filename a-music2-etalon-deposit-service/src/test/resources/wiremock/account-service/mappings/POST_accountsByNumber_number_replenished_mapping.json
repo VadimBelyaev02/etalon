@@ -1,0 +1,31 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/account/api/v1/accounts-by-number/PL04234567840000000000000001/replenished",
+        "method": "POST",
+        "headers": {
+          "Content-Type": {
+            "equalTo": "application/json"
+          }
+        },
+      "bodyPatterns": [
+        {
+          "equalToJson": {
+            "withdrawAmount" : 100,
+            "replenishAmount" : 100,
+            "accountNumberToWithdraw" : "1"
+          }
+        }
+      ]
+    },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "POST_accountsByNumber_number_replenished_response_ok.json"
+      }
+    }
+  ]
+}

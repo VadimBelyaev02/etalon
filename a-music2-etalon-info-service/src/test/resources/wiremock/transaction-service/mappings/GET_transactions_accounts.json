@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "urlPattern": "/transaction/api/v1/transactions\\?(?!.*\\binvalidAccountNumber\\b).*$",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_transactions_accounts_ok.json"
+      }
+    },
+    {
+      "request": {
+        "urlPattern": "/transaction/api/v1/transactions\\?accountNumber=invalidAccountNumber$",
+        "method": "GET"
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "GET_transactions_accounts_bad-request.json"
+      }
+    }
+  ]
+}

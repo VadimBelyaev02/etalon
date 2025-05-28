@@ -1,0 +1,38 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0008-create-fines-table-and-init" author="itaren">
+        <createSequence
+                sequenceName="fines_sequence"
+                dataType="bigint"
+                startValue="1"/>
+        <createTable tableName="fines">
+            <column name="payment_product_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="fine_type" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="recipient_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseColumnNames="payment_product_id"
+                baseTableName="fines"
+                constraintName="fk_payment_types_to_fines"
+                referencedColumnNames="id"
+                referencedTableName="payment_types"/>
+        <loadData tableName="fines"
+                  file="data/20240705-fines.csv"
+                  relativeToChangelogFile="true"
+                  commentLineStartsWith=""
+                  usePreparedStatements="true">
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,109 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/card/api/v1/cards?accountNumber=PL48234567840000000000000031",
+        "method": "GET"
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 3,
+            "expirationDate": "2024-06-16T14:26:52Z",
+            "issuer": "VISA",
+            "productType": "CREDIT",
+            "productName": "Etalon",
+            "number": "4246700000001090",
+            "accountNumber": "PL48234567840000000000000031",
+            "balance": 1000.0,
+            "currency": [
+              "PLN"
+            ],
+            "isBlocked": false,
+            "status": "ACTIVE",
+            "cardholderName": "ROBERT SMITH",
+            "cvv": 333,
+            "withdrawLimit": 2000,
+            "transferLimit": 500,
+            "dailyExpenseLimit": 1000,
+            "bankBranchId": 1
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards?accountNumber=PL48234567840000000000009741",
+        "method": "GET"
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 4,
+            "expirationDate": "2024-06-16T14:26:52Z",
+            "issuer": "VISA",
+            "productType": "CREDIT",
+            "productName": "Etalon",
+            "number": "4246700000001053",
+            "accountNumber": "PL48234567840000000000009741",
+            "balance": 1000.0,
+            "currency": [
+              "PLN"
+            ],
+            "isBlocked": false,
+            "status": "ACTIVE",
+            "cardholderName": "JACK JOHNSON",
+            "cvv": 333,
+            "withdrawLimit": 2000,
+            "transferLimit": 500,
+            "dailyExpenseLimit": 1000,
+            "bankBranchId": 1
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards?accountNumber=PL48234567840000000000004152",
+        "method": "GET"
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 5,
+            "expirationDate": "2024-06-16T14:26:52Z",
+            "issuer": "VISA",
+            "productType": "CREDIT",
+            "productName": "Etalon",
+            "number": "4246700000002674",
+            "accountNumber": "PL48234567840000000000004152",
+            "balance": 1000.0,
+            "currency": [
+              "PLN"
+            ],
+            "isBlocked": false,
+            "status": "ACTIVE",
+            "cardholderName": "JACK JOHNSON",
+            "cvv": 333,
+            "withdrawLimit": 2000,
+            "transferLimit": 500,
+            "dailyExpenseLimit": 1000,
+            "bankBranchId": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/card/api/v1/cards/cards-info?cardId=2",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 2,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*0521"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards/cards-info?cardId=2&cardId=1",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 1,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*6233"
+          },
+          {
+            "id": 2,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*0521"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards/cards-info?cardId=7",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 7,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*9521"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards/cards-info?cardId=4&cardId=5&cardId=4&cardId=5",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 4,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*1090"
+          },
+          {
+            "id": 5,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*2674"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/card/api/v1/cards/cards-info?cardId=4&cardId=5",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 4,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*1090"
+          },
+          {
+            "id": 5,
+            "cardProductName": "Etalon",
+            "maskedCardNumber": "*2674"
+          }
+        ]
+      }
+    }
+  ]
+}

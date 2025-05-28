@@ -1,0 +1,130 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/info/api/v1/info/exchange-rates?currency=PLN",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "currencyName": "USD",
+            "currencyId": 2,
+            "sellingRate": 0.2498,
+            "buyingRate": 0.2600,
+            "updateAt": "2024-05-28T11:04:18.6637148Z"
+          },
+          {
+            "currencyName": "EUR",
+            "currencyId": 3,
+            "sellingRate": 0.2304,
+            "buyingRate": 0.2398,
+            "updateAt": "2024-05-28T11:04:18.6637148Z"
+          },
+          {
+            "currencyName": "GBP",
+            "currencyId": 4,
+            "sellingRate": 0.1960,
+            "buyingRate": 0.2040,
+            "updateAt": "2024-05-28T11:04:18.6637148Z"
+          },
+          {
+            "currencyName": "CHF",
+            "currencyId": 5,
+            "sellingRate": 0.2286,
+            "buyingRate": 0.2379,
+            "updateAt": "2024-05-28T11:04:18.6637148Z"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/exchange-rates?currency=USD",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "currencyName": "PLN",
+            "currencyId": 1,
+            "sellingRate": 3.8460,
+            "buyingRate": 4.0030,
+            "updateAt": "2024-05-28T11:04:52.5024817Z"
+          },
+          {
+            "currencyName": "EUR",
+            "currencyId": 3,
+            "sellingRate": 0.9039,
+            "buyingRate": 0.9407,
+            "updateAt": "2024-05-28T11:04:52.5024817Z"
+          },
+          {
+            "currencyName": "GBP",
+            "currencyId": 4,
+            "sellingRate": 0.7689,
+            "buyingRate": 0.8003,
+            "updateAt": "2024-05-28T11:04:52.5024817Z"
+          },
+          {
+            "currencyName": "CHF",
+            "currencyId": 5,
+            "sellingRate": 0.8968,
+            "buyingRate": 0.9334,
+            "updateAt": "2024-05-28T11:04:52.5024817Z"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/info/api/v1/info/exchange-rates?currency=EUR",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "currencyName": "PLN",
+            "currencyId": 1,
+            "sellingRate": 4.1702,
+            "buyingRate": 4.3405,
+            "updateAt": "2024-05-28T11:05:17.4452157Z"
+          },
+          {
+            "currencyName": "USD",
+            "currencyId": 2,
+            "sellingRate": 1.0627,
+            "buyingRate": 1.1060,
+            "updateAt": "2024-05-28T11:05:17.4452157Z"
+          },
+          {
+            "currencyName": "GBP",
+            "currencyId": 4,
+            "sellingRate": 0.8337,
+            "buyingRate": 0.8678,
+            "updateAt": "2024-05-28T11:05:17.4452157Z"
+          },
+          {
+            "currencyName": "CHF",
+            "currencyId": 5,
+            "sellingRate": 0.9724,
+            "buyingRate": 1.0121,
+            "updateAt": "2024-05-28T11:05:17.4452157Z"
+          }
+        ]
+      }
+    }
+  ]
+}

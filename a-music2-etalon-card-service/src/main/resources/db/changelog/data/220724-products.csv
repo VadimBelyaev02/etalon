@@ -1,0 +1,8 @@
+id,product_type,name,issuer,validity,issuance_fee,annual_maintenance_fee,apr,cashback
+1,CREDIT,Etalon,VISA,3,0,40,15,
+2,CREDIT,Vacations,VISA,1,0,20,25,
+3,CREDIT,Pleasures,MASTERCARD,5,20,200,10,
+4,DEBIT,Enjoy,VISA,2,0,200,,0
+5,DEBIT,Shopping,MASTERCARD,2,20,300,,5
+6,DEBIT,Quick Apple,MASTERCARD,1,0,150,,0
+7,DEBIT,Foreign currency,MASTERCARD,3,20,200,,1
